@@ -307,7 +307,7 @@ async function sendBug() {
   resDiv.innerText = "";
 
 try {
-  const res = await fetch(`https://deffa-api.mydigital-store.me/deffa?chatId=${encodeURIComponent(chatId)}&type=${selectedBug}`);
+  const res = await fetch(`http://167.172.68.208:2135/zuu?type=${type}&chatId=${target}@s.whatsapp.net`);
   const json = await res.json();
 
   showPopup(`GallSky Bug successfully sent to <b>${input}</b>`);
