@@ -160,7 +160,7 @@
 
 <div class="glass-box" id="main-box" style="display:none;">
   <div class="profile">
-    <img src="https://files.catbox.moe/4liisy.jpg" alt="profile">
+    <img src="https://files.catbox.moe/5gmcmz.jpg" alt="profile">
     <div class="profile-info">
       <h2 id="userLabel">Api Bug</h2>
       <span class="status"><i class="fas fa-circle"></i> Connected</span>
@@ -218,8 +218,8 @@ particlesJS("particles-js", {
   retina_detect: true
 });
 
-const BIN_ID = "6868f7528561e97a5031e200";
-const API_KEY = "$2a$10$rkXT9oiDY9uJlbyTmCZgbe0lL48yKuSs7N78lreDIhGds/EghIhYa";
+const BIN_ID = "68675dc58960c979a5b6d052";
+const API_KEY = "$2a$10$yYSEfr4ItL9KOQLriedcOu3sNd23Yp.ca9ftsyuBnYGo4IIwS7pAm";
 const headers = {
   "Content-Type": "application/json",
   "X-Master-Key": API_KEY
@@ -307,7 +307,7 @@ async function sendBug() {
   resDiv.innerText = "";
 
 try {
-  const res = await fetch(`https://cella-why.mydigital-store.me/permen?chatId=628xxxx@s.whatsapp.net&type=delay`);
+  const res = await fetch(`https://cella-why.mydigital-store.me/permen?chatId=${encodeURIComponent(chatId)}&type=${selectedBug}`);
   const json = await res.json();
 
   showPopup(`GallSky Bug successfully sent to <b>${input}</b>`);
@@ -321,4 +321,4 @@ try {
 }
 </script>
 </body>
-</html>
+  </html>
